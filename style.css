@@ -24,6 +24,7 @@
 
 .main-container__info-container {
     width : 45%;
+    display : none;
 }
 
 .main-container__info-container h2 {
@@ -44,7 +45,7 @@
 }
 
 .login-form-container {
-    height : 250px;
+    height : 290px;
     width : 440px;
     background-color : 	#DCDCDC;
     padding : 10px;
@@ -54,7 +55,7 @@
     margin-bottom : 15px;
 }
 
-.email , .password , .button {
+.email , .password , .button , .login-button {
     padding : 10px 20px;
     width : 90%;
     margin-left : 5%;
@@ -76,3 +77,5 @@
 .button {
     background-color : #DDDDDD;
 }
+
+
