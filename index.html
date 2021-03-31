@@ -17,6 +17,11 @@
                 <div class="main-container__login-container">
                     <div class="login-form-container">
                         <form name="login" class="login-form" method="get" action="#">
+                            <div class="invalid-info">
+                                <h4>
+                                    Incorrect email or password.
+                                </h4>
+                            </div>
                             <div class="email-container">
                                 <input type="email" placeholder="Enter your email?" class="email">
                             </div>
@@ -24,11 +29,11 @@
                                 <input type="password" placeholder="Password" class="password">
                             </div>
                             <div class="login-button-container">
-                                <input type="button" value="Log In" class="login-button">
+                                <a class="link-to-message" href="#"><input type="button" value="Log In" class="login-button"></a>
                             </div>
                             <div style="font-size : 200%; text-align : center;">or</div>
-                            <div class="button-container">
-                                <input type="button" value="Create Account" class="button">
+                            <div class="create-account-button-container">
+                                <input type="button" value="Create Account" class="create-account-button">
                             </div>
                         </form>
                     </div>
