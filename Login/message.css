@@ -104,11 +104,9 @@ body {
     font-weight: 600;
 }
 
-.copyright-container {
-    padding-left : 5px;
-}
 
 .copyright-container p {
+    padding-left : 5px;
     font-weight : 300;
 }
 
