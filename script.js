@@ -14,28 +14,41 @@ let collections = {
         email : "silwalrikesh1@gmail.com",
         password : "kxababu"
     } , 
-    messageSiteLink : "./message.html"
+    messageSiteLink : "./Login/message.html"
+}
+
+// Log in clicked or enter entered --> function
+const enterLogin = () => {
+    checkUser(checkEmail , checkPassword);
+    emailInput.value = "";
+    passwordInput.value = "";
+    emailInput.focus();
 }
 
 // When we click login button
-loginBtn.addEventListener("click" , () => {
-    checkUser(checkEmail , checkPassword);
-})
+loginBtn.addEventListener("click" ,enterLogin);
+
+//when we press enter button
+document.addEventListener("keydown" , (event) => {
+    if(event.keyCode === 13) {
+        enterLogin();
+    }
+});
 
 // When we click create account  button
 createAccountBtn.addEventListener("click" , () => {
     
-})
+});
 
 // When we type inside the email input 
 emailInput.addEventListener("change" , (e) => {
     checkEmail = e.target.value;
-})
+});
 
 // When we type inside the password input 
 passwordInput.addEventListener("change" , (e) => {
     checkPassword = e.target.value;
-})
+});
 
 // Function to validate the correct user email and password
 const checkUser = (email , password) => {

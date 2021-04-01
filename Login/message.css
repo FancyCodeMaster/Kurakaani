@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+* {
+    margin : 0;
+    padding : 0;
+    box-sizing  : border-box;
+}
+
+body {
+    font-family : Lato;
+}
+
+.message-section {
+    height : 100vh;
+    width : 100vw;
+    background-color: #aaaaaa;
+    display : flex;
+}
+
+.online-preview-container {
+    width : 25%;
+    height : 100%;
+    background-color : #dddddd;
+}
+
+.messages-container {
+    width : 75%;
+    background-color : #fff;
+}
+
+.your-message-container {
+    height : 70px;
+    background-color : #dddddd;
+    text-align: center;
+    padding-top : 15px;
+}
+
+.online-preview-container__user-search-container {
+    height : 60px;
+    background-color : #dddddd;
+    padding-top : 10px;
+}
+
+.user-search-form {
+    text-align : center;
+}
+
+.user-search {
+    width : 90%;
+    padding : 10px;
+    border-radius : 8px;
+    outline : none;
+    border : 1px solid #cccccc;
+    background-color: #cccccc;
+}
+
+.online-preview-container__online-users-container {
+    max-height : 555px;
+    background-color: #dddddd;
+    overflow : scroll;
+}
+
+.online-preview-container__online-users-container::-webkit-scrollbar {
+    width : 0;
+    background : transparent;
+}
+
+.user-info {
+    height : 50px;
+    width : 100%;
+    position : relative;
+    /* background-color : #fff; */
+    margin-bottom : 10px;
+}
+
+.user-info-active {
+    background-color : #fff;
+}
+
+
+
+.user-info:first-child {
+    margin-top : 10px;
+}
+
+.user-image-container {
+    height : 50px;
+    width : 50px;
+    margin : 0 10px;
+}
+
+.user-image-container img {
+    height : 100%;
+    width : 100%;
+    object-fit : contain;
+    border-radius : 90%;
+}
+
+.user-info-plus-message-container {
+    position : absolute;
+    top : 10%;
+    left : 20%;
+}
+
+.user-info-container h4 {
+    font-weight: 600;
+}
+
+.copyright-container {
+    padding-left : 5px;
+}
+
+.copyright-container p {
+    font-weight : 300;
+}
