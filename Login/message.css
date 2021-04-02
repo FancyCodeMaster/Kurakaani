@@ -60,7 +60,7 @@ body {
 }
 
 .online-preview-container__online-users-container {
-    max-height : 620px;
+    max-height : 555px;
     background-color: var(--light-grey);
     overflow : scroll;
 }
@@ -147,7 +147,7 @@ body {
     border-radius : 100%;
     position : absolute;
     top : 20.5%;
-    left : 4.2%;
+    left : 4%;
 }
 
 .active-icon {
