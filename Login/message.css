@@ -5,6 +5,14 @@
     padding : 0;
     box-sizing  : border-box;
 }
+:root {
+    --message-section-bgcolor : #aaaaaa;
+    --light-grey : #dddddd;
+    --search-input : #cccccc;
+    --spec-message-container : #cccccc;
+    --spec-message-user-title : #fff;
+    --spec-message-messages : #eeeeee;
+}
 
 body {
     font-family : Lato;
@@ -13,26 +21,26 @@ body {
 .message-section {
     height : 100vh;
     width : 100vw;
-    background-color: #aaaaaa;
+    background-color: var(--message-section-bgcolor);
     display : flex;
 }
 
 .online-preview-container {
     width : 25%;
     height : 100%;
-    background-color : #dddddd;
+    background-color : var(--light-grey);
 }
 
 .your-message-container {
     height : 70px;
-    background-color : #dddddd;
+    background-color :  var(--light-grey);
     text-align: center;
     padding-top : 15px;
 }
 
 .online-preview-container__user-search-container {
     height : 60px;
-    background-color : #dddddd;
+    background-color :  var(--light-grey);
     padding-top : 10px;
 }
 
@@ -45,15 +53,15 @@ body {
     padding : 10px;
     border-radius : 8px;
     outline : none;
-    border : 1px solid #cccccc;
-    background-color: #cccccc;
+    border : 1px solid var(--search-input);
+    background-color: var(--search-input);
     font-family : Lato;
     letter-spacing : 0.8px;
 }
 
 .online-preview-container__online-users-container {
     max-height : 555px;
-    background-color: #dddddd;
+    background-color: var(--light-grey);
     overflow : scroll;
 }
 
@@ -66,7 +74,6 @@ body {
     height : 60px;
     width : 100%;
     position : relative;
-    /* background-color : #fff; */
     margin-bottom : 10px;
     padding : 5px 0;
 }
@@ -111,5 +118,61 @@ body {
 
 .messages-container {
     width : 75%;
-    background-color : #cccccc;
+    background-color : var(--spec-message-container);
 }
+
+/* Messages Container */
+
+.user-title-container {
+    background-color : var(--spec-message-user-title);
+    height : 10%;
+    width : 100%;
+    position : relative;
+    padding-top : 10px;
+    padding-left : 10px;
+}
+
+.user-image-and-name-container img {
+    height : 50px;
+    width : 50px;
+    object-fit : cover;
+    border-radius : 100%;
+}
+
+.active-icon-container {
+    height : 10px;
+    width : 10px;
+    background-color : var(--spec-message-user-title);
+    padding : 2px;
+    border-radius : 100%;
+    position : absolute;
+}
+
+.active-icon {
+    height : 100%;
+    width : 100%;
+    background-color: green;
+    border-radius : 100%;
+}
+
+.user-image-and-name-container div {
+    position : absolute;
+    top : 18%;
+    left : 6%;
+}
+
+.user-image-and-name-container div p {
+    font-weight: 1;
+}
+
+
+
+
+
+.user-messages-container {
+    height : 90%;
+    background-color : var(--spec-message-messages);
+}
+
+
+/*--------------------*/
