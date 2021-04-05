@@ -5,16 +5,24 @@ let emailInput = document.querySelector(".email");
 let passwordInput = document.querySelector(".password");
 let invalidInfo = document.querySelector(".invalid-info");
 let linkToMessage = document.querySelector(".link-to-message");
+let linkToNewAccount = document.querySelector(".link-to-new-account");
 
 let checkEmail;
 let checkPassword;
 // Collections object to match up email , password and many counting stuffs
 let collections = {
-    details : {
+    initDetails : {
         email : "silwalrikesh1@gmail.com",
         password : "kxababu"
     } , 
-    messageSiteLink : "./Login/message.html"
+    enteredDetails : {
+        firstName : null,
+        middleName : null,
+        lastName : null,
+        password : null,
+    },
+    messageSiteLink : "./Login/message.html",
+    // newAccountSiteLink : "./CreateAccount/createaccount.html",
 }
 
 // Log in clicked or enter entered --> function
@@ -52,10 +60,15 @@ passwordInput.addEventListener("change" , (e) => {
 
 // Function to validate the correct user email and password
 const checkUser = (email , password) => {
-    if(email===collections.details.email && password===collections.details.password) {
+    if(email===collections.initDetails.email && password===collections.initDetails.password) {
         invalidInfo.style.visibility = "hidden";
         linkToMessage.setAttribute("href" , collections.messageSiteLink);
     }else {
         invalidInfo.style.visibility = "visible";
     }
+}
+
+// Function to create new account and add their info to the collections objects
+const createAccountUserInfo = () => {
+
 }
