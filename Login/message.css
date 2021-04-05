@@ -175,3 +175,31 @@ body {
 
 
 /*--------------------*/
+
+@media only screen and (min-width : 320px)
+    {
+        .online-preview-container {
+            display : none;
+        }
+
+        .messages-container {
+            width : 100%;
+        }
+
+        .user-title-container {
+            width : 100%;
+            position :relative;
+        }
+
+        .user-image-and-name-container {
+            position : absolute;
+            top : 15%;
+            left : 30%;
+        }
+
+        .user-name-and-active-status {
+            position : absolute;
+            top : 2%;
+            left : 120%;
+        }
+    }
