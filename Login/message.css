@@ -154,8 +154,8 @@ body {
 
 .user-info-plus-message-container {
     position : absolute;
-    top : 20%;
-    left : 27%;
+    top : 0.65rem;
+    left : 4.5rem;
 }
 
 .user-info-container h4 {
@@ -175,7 +175,59 @@ body {
 }
 
 
+/* For screen size of 375 px */
+@media only screen and (min-width : 375px) {
+    .user-message-container{
+        width : 180px;
+    }
+}
 
+/* For screen size of 425 px */
+@media only screen and (min-width : 425px) {
+    .user-message-container {
+        width : 200px;
+    }
+}
+
+
+/* For tablets--> size of 768px*/
+@media only screen and (min-width : 768px) {
+    .user-message-container {
+        width : 400px;
+    }
+
+    .online-preview-container {
+        min-width : 45%;
+    }
+
+}
+
+/* For laptops--> size of 1024px */
+@media only screen and (min-width : 1024px) {
+    .online-preview-container {
+        height : 100%;
+        width : 30%;
+        z-index : none;
+        transform: none;
+        transition : none;
+    }
+
+    .messages-container {
+        position : initial;
+        height : 100%;
+        width : 70%;
+    }
+
+    .hamburger-icon {
+        display : none;
+    }
+
+    .user-title-container {
+        height : 10%;
+        width : 100%;
+    }
+
+}
 
 
 
