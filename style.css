@@ -51,11 +51,11 @@
     width : 100%;
     padding : 5px;
     display : flex;
-    background-color : #dddddd;
+    /* background-color : #dddddd;
     border-radius : 8px;
-    box-shadow: 1px 1px 1px 4px #fff;
+    box-shadow: 1px 1px 1px 4px #fff; */
     justify-content : center;
-    align-items : center;
+    align-items : top;
 }
 
 .invalid-info {
@@ -71,8 +71,10 @@
 }
 
 .email , .password , .create-account-button , .login-button {
-    padding : 10px 20px;
-    width : 100%;
+    padding : 10px;
+    background-color: #fff;
+    border : 1px solid #fff;
+    width : 250px;
     font-family : Averia Serif Libre , sans-serif;
     border-radius : 8px;
     outline : none;
@@ -90,11 +92,13 @@
 .create-account-button {
     background-color: #0074D9;
     cursor : pointer;
+    border : 1px solid #0074D9;
 } 
 
 .login-button {
     background-color: #01FF70 ;
     cursor : pointer;
+    border : 1px solid #01FF70;
 }
 
 .email , .password {

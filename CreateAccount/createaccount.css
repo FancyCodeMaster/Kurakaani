@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Kiwi+Maru&display=swap');
+
+* {
+    margin : 0;
+    padding : 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family : Kiwi Maru , sans-serif;
+    height : 100vh;
+    width : 100vw;
+    overflow : hidden;
+}
+
+.new-account-section {
+    height : 100%;
+    width : 100%;
+    overflow : scroll;
+    background-color: #d9a7c7;
+}
+
+.main-container {
+    height : 100%;
+    width : 100%;
+    display : flex;
+    justify-content : center;
+    align-items : top;
+}
+
+.new-account-form-container {
+    height : 500px;
+    width : 440px;
+    /* background-color: #fff;
+    border-radius : 10px;
+    box-shadow : 5px 4px 1px 1px rgba(0, 0, 0, 0.226); */
+}
+
+.new-account-form {
+    height : 100%;
+    width : 100%;
+    padding : 10px;
+    text-align: center;
+    display : flex;
+    flex-direction: column;
+    justify-content : center;
+}
+
+.new-account-form div {
+    margin-top : 50px;
+}
+
+.email , .password , .button {
+    padding : 10px;
+    /* background-color: #dddddd; */
+    background-color: #fff;
+    border-radius : 4px;
+    /* width : 300px; */
+    width : 250px;
+    outline : none;
+    /* border : 1px solid #dddddd; */
+    border : 1px solid #fff;
+    font-size : 100%;
+    font-family : Kiwi Maru , sans-serif;
+}
+
+
+.button {
+    cursor : pointer;
+}

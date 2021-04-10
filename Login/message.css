@@ -62,12 +62,18 @@ body {
 
 .user-title-container {
     background-color : var(--spec-message-user-title);
-    height : 10%;
+    height : 76.8px;
     width : 100%;
     display : flex;
     justify-content : space-between;
     align-items : center;
 }
+
+/* .hamburger {
+    height : 30px;
+    width : 30px;
+    background-color: #000;
+} */
 
 .hamburger-icon {
     font-size : 300%;
@@ -77,6 +83,26 @@ body {
     height : 50px;
     width : 50px;
     object-fit : cover;
+    border-radius : 100%;
+    position : relative;
+}
+
+.active-icon-container {
+    height : 16px;
+    width : 16px;
+    background-color: var(--spec-message-user-title);
+    padding : 2px;
+    border-radius : 100%;
+    position :absolute;
+    top : 0px;
+    left : 35px;
+}
+
+.active-icon {
+    height : 100%;
+    width : 100%;
+    object-fit: contain;
+    background-color: rgb(12, 150, 12);
     border-radius : 100%;
 }
 
@@ -170,8 +196,23 @@ body {
     text-overflow: hidden;
 }
 
+.icons-container {
+    width : 100px;
+    display : flex;
+    justify-content : space-between;
+    align-items : center;
+}
+
 .videocall-icon {
-    display : none;
+    font-size : 200%;
+}
+
+.audiocall-icon {
+    font-size : 200%;
+}
+
+.options-icon {
+    font-size : 200%;
 }
 
 
@@ -180,12 +221,20 @@ body {
     .user-message-container{
         width : 180px;
     }
+
+    .icons-container {
+        width : 109px;
+    }
 }
 
 /* For screen size of 425 px */
 @media only screen and (min-width : 425px) {
     .user-message-container {
         width : 200px;
+    }
+
+    .icons-container {
+        width : 115px;
     }
 }
 
@@ -200,16 +249,30 @@ body {
         min-width : 45%;
     }
 
+    .icons-container {
+        width : 140px;
+    }
+
 }
 
 /* For laptops--> size of 1024px */
 @media only screen and (min-width : 1024px) {
     .online-preview-container {
+        display : block;
         height : 100%;
+        min-width : 0;
         width : 30%;
-        z-index : none;
-        transform: none;
-        transition : none;
+        transform : none;
+        z-index : 0;
+    }
+
+    .user-image-and-name-container {
+        margin-left: 20px;
+        min-width : 200px;
+    }
+
+    .icons-container {
+        margin-right : 20px;
     }
 
     .messages-container {
@@ -218,188 +281,30 @@ body {
         width : 70%;
     }
 
-    .hamburger-icon {
+    .hamburger {
         display : none;
     }
 
     .user-title-container {
-        height : 10%;
+        height : 100px;
         width : 100%;
     }
 
+    .user-name-and-active-status {
+        display : block;
+        position :absolute;
+        top : 2px;
+        left : 60px;
+    }
 }
 
+@media only screen and (min-width : 1440px) {
+    .online-preview-container {
+        width : 21.5%;
+    }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* 
-.online-preview-container {
-    width : 25%;
-    height : 100%;
-    background-color : var(--light-grey);
+    .messages-container {
+        width : 78.5%;
+    }
 }
 
-.your-message-container {
-    height : 70px;
-    background-color :  var(--light-grey);
-    text-align: center;
-    padding-top : 15px;
-}
-
-.online-preview-container__user-search-container {
-    height : 60px;
-    background-color :  var(--light-grey);
-    padding-top : 10px;
-}
-
-.user-search-form {
-    text-align : center;
-}
-
-.user-search {
-    width : 90%;
-    padding : 10px;
-    border-radius : 8px;
-    outline : none;
-    border : 1px solid var(--search-input);
-    background-color: var(--search-input);
-    font-family : Lato;
-    letter-spacing : 0.8px;
-}
-
-.online-preview-container__online-users-container {
-    max-height : 555px;
-    background-color: var(--light-grey);
-    overflow : scroll;
-}
-
-.online-preview-container__online-users-container::-webkit-scrollbar {
-    width : 0;
-    background : transparent;
-}
-
-.user-info {
-    height : 60px;
-    width : 100%;
-    position : relative;
-    margin-bottom : 10px;
-    padding : 5px 0;
-}
-
-.user-info-active {
-    background-color : #fff;
-}
-
-
-
-.user-info:first-child {
-    margin-top : 10px;
-}
-
-.user-image-container {
-    height : 50px;
-    width : 50px;
-    margin : 0 10px;
-}
-
-.user-image-container img {
-    height : 100%;
-    width : 100%;
-    object-fit : cover;
-    border-radius : 100%;
-}
-
-.user-info-plus-message-container {
-    position : absolute;
-    top : 10%;
-    left : 20%;
-}
-
-.user-info-container h4 {
-    font-weight: 600;
-}
-
-.copyright-container p {
-    padding-left : 5px;
-    font-weight : 300;
-}
-
-.messages-container {
-    width : 75%;
-    background-color : var(--spec-message-container);
-}
-
-/* Messages Container */
-
-/* .user-title-container {
-    background-color : var(--spec-message-user-title);
-    height : 10%;
-    width : 100%;
-    position : relative;
-    padding-top : 10px;
-    padding-left : 10px;
-}
-
-.user-image-and-name-container img {
-    height : 50px;
-    width : 50px;
-    object-fit : cover;
-    border-radius : 100%;
-}
-
-.active-icon-container {
-    height : 15px;
-    width : 15px;
-    background-color : var(--spec-message-user-title);
-    padding : 3px;
-    border-radius : 100%;
-    position : absolute;
-    top : 20.5%;
-    left : 4%;
-}
-
-.active-icon {
-    height : 100%;
-    width : 100%;
-    background-color: green;
-    border-radius : 100%;
-}
-
-.user-name-and-active-status {
-    position : absolute;
-    top : 18%;
-    left : 6%;
-}
-
-
-
-
-
-
-.user-messages-container {
-    height : 90%;
-    background-color : var(--spec-message-messages);
-} */ 
-
-
-/*--------------------*/
