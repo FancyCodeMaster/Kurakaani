@@ -68,3 +68,20 @@ body {
 .button {
     cursor : pointer;
 }
+
+@media only screen and (min-width : 768px) {
+    .main-container {
+        align-items : center;
+    }
+    .new-account-form-container {
+        background-color: #fff;
+        border-radius : 10px;
+        box-shadow : 5px 4px 1px 1px rgba(0, 0, 0, 0.226);
+    }
+
+    .email , .password , .button {
+        background-color: #dddddd;
+        width : 300px;
+        border : 1px solid #dddddd;
+    }
+}
