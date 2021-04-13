@@ -215,6 +215,40 @@ body {
     font-size : 200%;
 }
 
+.enter-message-container {
+    width : 100%;
+    height : 50px;
+    position : absolute;
+    bottom : 0px;
+    background-color : red;
+    display : flex;
+    justify-content : space-between;
+    align-items : center;
+}
+
+.other-files-container {
+    height : 100%;
+    width : 10%;
+}
+
+.message-box-container {
+    height : 100%;
+    width : 80%;
+}
+
+.emoji-container {
+    height : 100%;
+    width : 10%;
+}
+
+.message-text {
+    padding : 10px;
+    width : 100%;
+    height : 100%;
+    border-radius : 7px;
+    border : 1px solid #fff
+}
+
 
 /* For screen size of 375 px */
 @media only screen and (min-width : 375px) {

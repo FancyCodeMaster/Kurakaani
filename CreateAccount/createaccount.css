@@ -69,7 +69,36 @@ body {
     cursor : pointer;
 }
 
-@media only screen and (min-width : 768px) {
+.confirm-password-container {
+    position : relative;
+}
+
+.password-no-match {
+    position : absolute;
+    top : -25px;
+    left : 19%;
+    color : #000;
+    /* display : none; */
+    visibility: hidden;
+}
+
+.password-no-match-active {
+    display : block;
+}
+
+@media only screen and (min-width : 375px) {
+    .email , .password , .button {
+        width : 270px;
+    }
+}
+
+@media only screen and (min-width : 425px) {
+    .email , .password , .button {
+        width : 300px;
+    }
+}
+
+@media only screen and (min-width : 500px) {
     .main-container {
         align-items : center;
     }

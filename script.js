@@ -34,7 +34,7 @@ const enterLogin = () => {
 }
 
 // When we click login button
-loginBtn.addEventListener("click" ,enterLogin);
+loginBtn.addEventListener("click" , enterLogin);
 
 //when we press enter button
 document.addEventListener("keydown" , (event) => {
@@ -50,12 +50,12 @@ createAccountBtn.addEventListener("click" , () => {
 
 // When we type inside the email input 
 emailInput.addEventListener("change" , (e) => {
-    checkEmail = e.target.value;
+    checkEmail = emailInput.value;
 });
 
 // When we type inside the password input 
-passwordInput.addEventListener("change" , (e) => {
-    checkPassword = e.target.value;
+passwordInput.addEventListener("keydown" , (e) => {
+    checkPassword = passwordInput.value;
 });
 
 // Function to validate the correct user email and password
@@ -63,6 +63,7 @@ const checkUser = (email , password) => {
     if(email===collections.initDetails.email && password===collections.initDetails.password) {
         invalidInfo.style.visibility = "hidden";
         linkToMessage.setAttribute("href" , collections.messageSiteLink);
+        linkToMessage.click();
     }else {
         invalidInfo.style.visibility = "visible";
     }
