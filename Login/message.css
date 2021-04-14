@@ -69,6 +69,17 @@ body {
     align-items : center;
 }
 
+.user-messages-container {
+    width : 100%;
+    height : 445px;
+    overflow : scroll;
+}
+
+.user-messages-container::-webkit-scrollbar {
+    width : 0;
+    background-color: transparent;
+}
+
 /* .hamburger {
     height : 30px;
     width : 30px;
@@ -115,6 +126,32 @@ body {
 
 .user-name-and-active-status {
     display : none;
+}
+
+.sender-message-container{
+    margin-bottom : 50px;
+    margin-top : 30px;
+    max-width : 200px;
+    position : relative;
+    left : 100px;
+    min-height : 40px;
+    padding : 10px;
+    background-color : #0084ff;
+    border : 2px solid #0084ff;
+    color : #fff;
+    border-radius : 10px;
+}
+
+.receiver-message-container{
+    max-width : 200px;
+    min-height: 40px;
+    padding : 10px;
+    border-radius : 10px;
+    position : relative;
+    left : 10px;
+    background-color : #e67e22;
+    border : 2px solid #e67e22;
+    color : #fff;
 }
 
 /* Messages Container */
@@ -220,10 +257,12 @@ body {
     height : 50px;
     position : absolute;
     bottom : 0px;
-    background-color : red;
     display : flex;
     justify-content : space-between;
     align-items : center;
+    background-color: #fff;
+    padding-top : 5px;
+    padding-bottom : 5px;
 }
 
 .other-files-container {
@@ -245,9 +284,22 @@ body {
     padding : 10px;
     width : 100%;
     height : 100%;
-    border-radius : 7px;
-    border : 1px solid #fff
+    border-radius : 10px;
+    border : 1px solid #aaa;
+    background-color: #aaa;
+    outline : none;
 }
+
+.other-files-icon , .thumbs-up-emoji{
+    font-size : 150%;
+    position : relative;
+    top : 8px;
+    left : 5px;
+    color : #e67e22;
+    cursor: pointer;
+}
+
+
 
 
 /* For screen size of 375 px */
@@ -259,6 +311,10 @@ body {
     .icons-container {
         width : 109px;
     }
+
+    .other-files-icon , .thumbs-up-emoji{
+        font-size : 160%;
+    }
 }
 
 /* For screen size of 425 px */
@@ -269,6 +325,10 @@ body {
 
     .icons-container {
         width : 115px;
+    }
+
+    .other-files-icon , .thumbs-up-emoji{
+        left : 10px;
     }
 }
 
@@ -285,6 +345,18 @@ body {
 
     .icons-container {
         width : 140px;
+    }
+
+    .other-files-container {
+        width : 5%;
+    }
+    
+    .message-box-container {
+        width : 90%;
+    }
+    
+    .emoji-container {
+        width : 5%;
     }
 
 }
