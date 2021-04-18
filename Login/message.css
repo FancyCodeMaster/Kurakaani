@@ -71,7 +71,7 @@ body {
 
 .user-messages-container {
     width : 100%;
-    height : 445px;
+    height : 700px;
     overflow : scroll;
 }
 
@@ -188,7 +188,8 @@ body {
 .online-preview-container__online-users-container {
     max-height : 81%;
     background-color: var(--light-grey);
-    overflow : scroll;
+    overflow-y : scroll;
+    overflow-x : hidden;
 }
 
 .online-preview-container__online-users-container::-webkit-scrollbar {
@@ -202,6 +203,14 @@ body {
     margin-bottom : 10px;
     padding : 5px 0;
     position : relative;
+}
+
+.user-info-clicked {
+    background-color: #fff;
+}
+
+.user-info:last-child {
+    margin-bottom : 30px;
 }
 
 .user-image-container {
@@ -364,7 +373,7 @@ body {
 }
 
 /* For laptops--> size of 1024px */
-@media only screen and (min-width : 1024px) {
+@media only screen and (min-width : 900px) {
     .online-preview-container {
         display : block;
         height : 100%;
@@ -389,6 +398,11 @@ body {
         width : 70%;
     }
 
+    .enter-message-container {
+        width : 70%;
+        left : 30%;
+    }
+
     .hamburger {
         display : none;
     }
@@ -411,8 +425,14 @@ body {
         width : 21.5%;
     }
 
-    .messages-container {
+    .messages-container , .enter-message-container {
         width : 78.5%;
     }
+
+    .enter-message-container {
+        left : 21.5%;
+    }
+
+
 }
 

@@ -28,8 +28,10 @@ let collections = {
 // Log in clicked or enter entered --> function
 const enterLogin = () => {
     checkUser(checkEmail , checkPassword);
+    console.log(checkPassword);
     emailInput.value = "";
     passwordInput.value = "";
+    linkToMessage.setAttribute("href" , "#");
     emailInput.focus();
 }
 
@@ -54,7 +56,7 @@ emailInput.addEventListener("change" , (e) => {
 });
 
 // When we type inside the password input 
-passwordInput.addEventListener("keydown" , (e) => {
+passwordInput.addEventListener("keyup" , (e) => {
     checkPassword = passwordInput.value;
 });
 
