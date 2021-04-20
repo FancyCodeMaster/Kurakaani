@@ -40,16 +40,18 @@ body {
 
 /* Mobile First Development */
 .online-preview-container {
-    display : none;
+    /* display : none; */
+    visibility: hidden;
     height : 100%;
     min-width : 75%;
     background-color : var(--light-grey);
     z-index : 4;
     transform: translateX(-100vw);
-    transition : all 1s;
+    /* transition : all 0.1s; */
 }
 
 .online-preview-container-active {
+    visibility : visible;
     display : block;
     transform: translateX(0);
 }
