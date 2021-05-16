@@ -56,16 +56,46 @@
     align-items : top;
 }
 
+/*
 .invalid-info {
     margin-bottom : 10px;
     text-align : center;
     color : red;
     visibility : hidden;
 }
+*/
 
 
 .email-container {
     margin-bottom : 15px;
+    position: relative;
+}
+
+
+.standard-email-tooltip , .standard-password-tooltip {
+    position: absolute;
+    background-color: #ddd;
+    border: 1px solid #000;
+    border-radius: 8px;
+    width : 250px;
+    padding: 5px;
+    display: none;
+}
+
+.standard-email-tooltip {
+    bottom: 50px;
+}
+
+.standard-password-tooltip {
+    bottom : 110px;
+}
+
+.email-container:hover .standard-email-tooltip {
+    display: block;
+}
+
+.password-container:hover .standard-password-tooltip {
+    display: block;
 }
 
 .or {
@@ -86,6 +116,7 @@
 
 .password-container {
     margin-bottom : 15px;
+    position: relative;
 }
 
 .create-account-button-container {
@@ -118,6 +149,10 @@
     .email , .password , .create-account-button , .login-button {
         width : 270px;
      }
+    
+
+    
+    
 }
 
 @media only screen and (min-width : 425px) {
@@ -127,6 +162,7 @@
     .email , .password , .create-account-button , .login-button {
         width : 300px;
     }
+    
 }
 
 @media only screen and (min-width : 500px) {
@@ -136,6 +172,7 @@
         box-shadow: 1px 1px 1px 4px #fff;
         align-items : center;
     }
+    
 }
 
 @media only screen and (min-width : 650px) {

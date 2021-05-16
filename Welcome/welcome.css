@@ -1,0 +1,183 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing : border-box;
+}
+
+body {
+    background-color: #fff;
+    font-size : 35px;
+    height: 100vh;
+    width : 100vw;
+    transition: all 0.5s;
+}
+
+.info-container {
+    width : 80%;
+    height : 300px;
+    background-color: #fff;
+    border-radius: 10px;
+    padding : 5px;
+    position: absolute;
+    z-index : 1;
+    left : 10%;
+    top : 40%;
+    transform: translateY(-100vh);
+    transition: all 0.5s;
+}
+
+.heading-container {
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top : 10px;
+}
+
+.app-info-container {
+    letter-spacing: 0.5px;
+    word-spacing: 1.5px
+}
+
+.button-container {
+    text-align: center;
+}
+
+.ok-button {
+    height : 40px;
+    width : 80px;
+    padding : 7px 10px;
+    text-align: center;
+    border-radius : 5px;
+    border : 1px solid #000;
+}
+
+.ok-button:hover {
+    background-color : green;
+}
+
+nav {
+    height : 10vh;
+    width : 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding : 5px 15px;
+    background-color: #ccc;
+}
+
+.logo-container {
+    height : 120px;
+    width : 120px;
+    border-radius: 100%;
+}
+
+.kurakaani-logo {
+    height : 100%;
+    width : 100%;
+    object-fit: cover;
+    border-radius: 100%;
+}
+
+.nav-list {
+    list-style-type: none;
+}
+
+.nav-list li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.nav-list li:last-child {
+    background-color: #fff;
+    padding : 2px;
+    border-radius: 100%;
+}
+
+.nav-list li a {
+    text-decoration: none;
+    color: #000;
+}
+
+.no-user-logo {
+    height : 50px;
+    width : 50px;
+    border-radius: 100%;
+    vertical-align: middle;
+}
+
+.admins-container {
+    height : 400px;
+    width : 100%;
+    border : 2px solid #000;
+    background-color: #eee;
+    margin-top: 30px;
+}
+
+.title-container {
+    border : 2px solid #000;
+    padding : 15px;
+    text-align : center;
+    background-color: #aaa;
+}
+
+.admins , .friends , .users {
+    margin-bottom : 20px;
+    padding : 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.admins img , .friend-info img , .user-info img {
+    height : 70px;
+    width : 70px;
+    object-fit: cover;
+    border-radius: 100%;
+    vertical-align: middle;
+    margin-left: 10px;
+    margin-right: 15px
+}
+
+
+.admin-1 {
+    margin-top : 5px;
+    border-bottom: 3px solid #000;
+}
+
+.admin-2 {
+    border-bottom: 3px solid #000;
+}
+
+.icons-container , .friends-icon-container , .users-icon-container {
+    padding : 10px;
+    width : 30%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.icons-container i , .friends-icon-container i , .users-icon-container i {
+    color: #e67e22;
+    font-size: 120%;
+}
+
+.friends-container , .users-container {
+/*    height : 650px;*/
+    max-height : 650px;
+    width : 100%;
+    border : 2px solid #000;
+    background-color: #eee;
+    margin-top: 35px;
+    overflow-y: scroll;
+}
+
+.friends-title-container , .user-title-container {
+    border : 2px solid #000;
+    padding : 15px;
+    text-align : center;
+    background-color: #aaa;
+}
+
+
+
+
+

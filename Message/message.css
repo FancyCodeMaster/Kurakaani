@@ -41,7 +41,7 @@ body {
 /* Mobile First Development */
 .online-preview-container {
     /* display : none; */
-    visibility: hidden;
+    /* visibility: hidden; */
     height : 100%;
     min-width : 75%;
     background-color : var(--light-grey);
@@ -301,6 +301,7 @@ body {
     border : 1px solid #aaa;
     background-color: #aaa;
     outline : none;
+    position: relative;
 }
 
 .other-files-icon , .thumbs-up-emoji{
@@ -310,6 +311,15 @@ body {
     left : 5px;
     color : #e67e22;
     cursor: pointer;
+}
+
+.send-button {
+    position: absolute;
+    top : 13px;
+    right : 45px;
+    font-size: 150%;
+    color : #e67e22;
+    cursor : pointer;
 }
 
 
@@ -328,6 +338,7 @@ body {
     .other-files-icon , .thumbs-up-emoji{
         font-size : 160%;
     }
+    
 }
 
 /* For screen size of 425 px */
@@ -433,6 +444,10 @@ body {
 
     .enter-message-container {
         left : 21.5%;
+    }
+    
+    .send-button {
+        right : 70px;
     }
 
 

@@ -6,6 +6,49 @@
     box-sizing: border-box;
 }
 
+.popup-container {
+    position: absolute;
+    top: 40%;
+    left : 20%;
+    background-color: #ddd;
+    border-radius: 10px;
+    padding : 5px;
+    height: 80px;
+    width : 60%;
+    z-index: 3;
+}
+
+.layer {
+    height: 100vh;
+    width : 100vw;
+    background-color: #000;
+    opacity: 0.9;
+    z-index: 2;
+    position: absolute;
+}
+
+.popup-container h3 {
+    padding-top: 5px;
+    font-size: 90%;
+}
+
+.popup-button-container {
+    text-align: center;
+    padding-top : 15px;
+}
+
+.popup-button {
+    padding : 5px 7px;
+    background-color: #fff;
+    border-radius: 7px;
+    border: 1px solid #000;
+}
+
+.popup-button a {
+    text-decoration: none;
+    color: #000;
+}
+
 body {
     font-family : Kiwi Maru , sans-serif;
     height : 100vh;
@@ -29,7 +72,7 @@ body {
 }
 
 .new-account-form-container {
-    height : 500px;
+    height : 600px;
     width : 440px;
     /* background-color: #fff;
     border-radius : 10px;
@@ -60,13 +103,31 @@ body {
     outline : none;
     /* border : 1px solid #dddddd; */
     border : 1px solid #fff;
-    font-size : 100%;
+    font-size : 90%;
+    font-family : Kiwi Maru , sans-serif;
+}
+
+.first-name , .last-name {
+    width : 125px;
+    padding : 10px;
+/*     background-color: #dddddd; */
+    background-color: #fff;
+    border-radius : 4px;
+    /* width : 300px; */
+    outline : none;
+    /* border : 1px solid #dddddd; */
+    border : 1px solid #fff;
+    font-size : 90%;
     font-family : Kiwi Maru , sans-serif;
 }
 
 
 .button {
     cursor : pointer;
+}
+
+.button:hover {
+    background-color: green;    
 }
 
 .confirm-password-container {
@@ -79,7 +140,8 @@ body {
     left : 19%;
     color : #000;
     /* display : none; */
-    visibility: hidden;
+/*    visibility: hidden;*/
+    display: none;
 }
 
 .password-no-match-active {
@@ -90,11 +152,17 @@ body {
     .email , .password , .button {
         width : 270px;
     }
+    .first-name , .last-name {
+        width : 135px;
+    }
 }
 
 @media only screen and (min-width : 425px) {
     .email , .password , .button {
         width : 300px;
+    }
+    .first-name , .last-name {
+        width : 150px;
     }
 }
 
@@ -112,5 +180,13 @@ body {
         background-color: #dddddd;
         width : 300px;
         border : 1px solid #dddddd;
+        font-size: 100%;
+    }
+    
+    .first-name , .last-name {
+        width : 150px;
+        background-color: #dddddd;
+        border : 1px solid #dddddd;
+        font-size : 100%;
     }
 }
